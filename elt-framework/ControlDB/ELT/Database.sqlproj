@@ -7,4 +7,19 @@
     <ModelCollation>1033, CI</ModelCollation>
     <ProjectGuid>{00000000-0000-0000-0000-000000000000}</ProjectGuid>
   </PropertyGroup>
+  <ItemGroup>
+    <SqlCmdVariable Include="ControlDB">
+      <Value>$(SqlCmdVar__1)</Value>
+      <DefaultValue>ControlDB</DefaultValue>
+    </SqlCmdVariable>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ControlDB.sqlproj">
+      <Name>ControlDB</Name>
+      <Project>{b4521477-9a6c-4ebc-a067-02ee9f0b9978}</Project>
+      <Private>True</Private>
+      <SuppressMissingDependenciesErrors>False</SuppressMissingDependenciesErrors>
+      <DatabaseSqlCmdVariable>ControlDB</DatabaseSqlCmdVariable>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
